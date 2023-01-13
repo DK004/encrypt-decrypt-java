@@ -5,7 +5,7 @@ class EncDe{
 
     public static void writeFile(String data){
         try {
-            FileWriter fw = new FileWriter("Contract copy.txt");
+            FileWriter fw = new FileWriter("fileName.txt");
             fw.write(data);
             fw.close();
             System.out.println("Successfully wrote to the file.");
@@ -37,7 +37,7 @@ class EncDe{
     }
 
     public static String readFile() throws Exception{
-        FileReader fr = new FileReader("Contract copy.txt");
+        FileReader fr = new FileReader("fileName.txt");
     
         // Declaring loop variable
         int i;
